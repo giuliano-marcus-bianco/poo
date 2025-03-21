@@ -23,3 +23,7 @@ public class OlaMundo{
     }
 }
 ```
+
+## Mascote do Java
+
+![Mascote do Java usando um escudo para se defender de das chamas saídas pela boca do Godzilla](mascote-java.jpg)
