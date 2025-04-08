@@ -37,6 +37,12 @@ application {
     mainClass = "ads.poo.App"
 }
 
+tasks.run.configure {
+    // Set the standard input to the console for the run task.
+    // This allows you to run the application from the command line and provide input directly.
+    standardInput = System.`in`
+}
+
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
