@@ -4,16 +4,24 @@ public class Caneta {
 
     // Atributos
     private String cor;
-    private double tinta;
+    private int tinta;
     private boolean tampada;
 
     // Métodos
-    public void definirCor (String corEscolhida) {
+    public void setCor (String corEscolhida) {
         cor = corEscolhida;
     }
 
-    public void definirNivelTinta (double nivelTinta) {
-        tinta = nivelTinta;
+    public String getCor() {
+        return cor;
+    }
+
+    public void setNivelTinta (int nivelTinta) {
+        tinta = (nivelTinta > 10 || nivelTinta < 0) ? 10 : nivelTinta;        
+    }
+
+    public double getTinta() {
+        return tinta;
     }
 
     public void tamparDestampar() {
@@ -24,8 +32,13 @@ public class Caneta {
         return tampada;
     }
 
-    public String getCor() {
-        return cor;
+    public String escreve(int quantidade) {
+
+        if (!tampada) {
+            quantos = tinta - quantidade > 0 ? return "_".repeat(quantidade) : return "_".repeat(tinta);
+        }
+
     }
+
 
 }

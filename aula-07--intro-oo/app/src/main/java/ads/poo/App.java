@@ -7,6 +7,10 @@ public class App {
     public static void main(String[] args) {
 
         Caneta bic = new Caneta();
+        
+        bic.setNivelTinta(20);
+
+        bic.setCor("preto");
 
         System.out.println(bic.isTampada());
 
@@ -14,9 +18,15 @@ public class App {
 
         System.out.println(bic.isTampada());
 
-        bic.definirCor("azul");
+        bic.tamparDestampar();
 
         System.out.println(bic.getCor());
+
+        System.out.println(bic.getTinta());
+
+        System.out.println(bic.escreve(5));
+
+        System.out.println(bic.getTinta());
 
     }
 }
