@@ -34,9 +34,13 @@ public class Caneta {
 
     public String escreve(int quantidade) {
 
+        int quantos = 0;
+
         if (!tampada) {
-            quantos = tinta - quantidade > 0 ? return "_".repeat(quantidade) : return "_".repeat(tinta);
+            quantos = tinta - quantidade > 0 ? "_".repeat(quantidade) : "_".repeat(tinta);
         }
+
+        return "_".repeat(quantos);
 
     }
 

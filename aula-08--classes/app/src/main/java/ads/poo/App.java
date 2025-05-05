@@ -6,6 +6,31 @@ package ads.poo;
 public class App {
 
     public static void main(String[] args) {
+
+        Contador contador = new Contador();
+        System.out.println("Valor inicial: " + contador.getValor());
+
+        for (int i = 0; i < 10; i++) {
+            contador.incrementar();
+        }
+
+        System.out.println("Valor após incrementar: " + contador.getValor());
+
+        Personagem link = new Personagem("Link");
+
+        Disciplina disciplina1 = new Disciplina();
+
+        disciplina1.setNome("Programação Orientada a Objetos");
+        disciplina1.setSigla("POO");
+        disciplina1.setCodigo("POO786");
+
+        Disciplina disciplina2 = new Disciplina();
+
+        disciplina2.setSigla("SEG");
+
+        System.out.println(disciplina1);
+
+        
         
     }
 
