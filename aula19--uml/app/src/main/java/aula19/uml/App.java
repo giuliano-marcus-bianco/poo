@@ -4,11 +4,11 @@
 package aula19.uml;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        
+        Aviao a380 = new Aviao(24, 853, 575000, 3200000, 4, false);
+
+        System.out.println(a380);
+
     }
 }

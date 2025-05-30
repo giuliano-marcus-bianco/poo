@@ -8,7 +8,7 @@ classDiagram
     - motores: ArrayList~Motor~
     }
     class Motor {
-    - tipoTurbina: String
+    - turbina: boolean
     - ligado: boolean
     }
     Aviao *-- Motor
