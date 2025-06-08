@@ -13,3 +13,21 @@ classDiagram
     }
     Aviao *-- Motor
 ```
+
+```mermaid
+classDiagram
+    class Autor {
+    - idAutor: int
+    - nomeAutor: String
+    }
+    class editora {
+    }
+    class Livro {
+    - idLivro: int
+    - titulo: String
+    - idioma: String
+    - autores: ArrayList~Autor~
+    - ligado: boolean
+    }
+    Aviao *-- Motor
+```
